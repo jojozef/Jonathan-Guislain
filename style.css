@@ -1,0 +1,147 @@
+body {
+    padding: 0 2%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(104, 97, 116);
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav .profile {
+    display: flex;
+    align-items: center;
+    
+}
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+nav .profile h1{
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+
+}
+nav ul li {    
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+nav ul li:hover {
+    border-bottom-color: rgb(2, 0, 0);
+
+}
+.page-content {
+    margin: 4%;
+}
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+
+}
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "oswald" , sans-serif;
+    font-size: 6vw;
+}
+.page-content header p {
+    line-height: 30%;
+    color: #818181;
+}
+.page-content header button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0%;
+    font-size: 80%;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+
+}
+.page-content header button:hover {
+    color: #ccc;
+    border-bottom-color: #000;
+
+}
+.page-content .presentation-image {
+  margin-top: 5%;
+  height: auto;
+  transition: filter 0.5s;
+  
+}
+.page-content .presentation-image img:hover {
+    filter: brightness(50%);
+}
+.page-content .presentation-image img {
+   max-width: 100%;
+   height: auto;
+
+}
+.page-content .projects-section {
+    margin-top: 6%;
+}
+.page-content .projects-section h1 {
+    font-family: "Oswald" , sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    
+}   
+.page-content .projects-section .projects {
+    display: flex;
+    flex-wrap: "wrap";
+}
+.page-content .projects-section .projects {
+    max-width: 195px;
+}
+.page-content .projects-section .projects {
+    margin-right: 20px;
+    max-width: 195px;
+}
+ .page-content .projects-section  .projects h4{
+     margin: 0;
+ }      
+.page-content .projects-section .projects  .description{
+    font-size: 10px;
+}
+.page-content .projects-section .projects .dates {
+    font-size: 13px;
+    color: rgb(145, 145, 145)
+}
+body
+{
+    background-color: rgb(7, 25, 107); /* Le fond de la page sera noir */
+    color: rgb(46, 11, 11); /* Le texte de la page sera blanc */
+}
+
+@media screen and (max-width: 700px){
+    nav {
+    justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+.page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+}
+.page-content .projects-section {
+    margin-top: 15%;
+}
+.page-content .projects-section h1 {
+    font-size: 1.5em;
+}
